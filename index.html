@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartLearn Simulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>SmartLearn Simulator 💡</h1>
+    <div id="scenario-title">Simulasi: Penjual Ikan</div>
+
+    <div class="progress">
+      <div id="progress-bar"></div>
+    </div>
+
+    <div id="text" class="description">Loading simulation...</div>
+    <div id="controls"></div>
+  </div>
+
+  <!-- AI Advisor Modal -->
+  <div id="advisor" class="popup hidden">
+    <div class="popup-content">
+      <h3>💬 AmarAI Advisor</h3>
+      <p id="advisor-text"></p>
+      <button onclick="closeAdvisor()">OK</button>
+    </div>
+  </div>
+
+  <script src="simulator.js"></script>
+</body>
+</html>
